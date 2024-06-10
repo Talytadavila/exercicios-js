@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            apresenta três funções (botões) para trabalhar com janelas
+        </title>
+        <script>
+        function abre1()
+{
+window.open("http://www.google.com");
+}
+function abre2()
+{
+    window.open("http://www.google.com","simples","width=350,heigth=400");
+}
+function abre3()
+{
+    window.open("http://www.google.com","simples","menubar,scrollbars,width=300,heigth=200");
+}
+        </script>
+    </head>
+    <body>
+        <form>
+            dê um clique no botão para abrir uma janela de 350px de largura, por 400px de altura,sem barras e menu 
+            <input type="button" name="abrir" value="janela2" onclick="abre2()"><br><br> 
+
+            dê um clique no botão para abrir uma janela com menu e barra de rodagens,mas sem barra de endereço e barra padrão:
+            <input type="button" name="abrir" value="janela3" onclick="abre3()"><br><br>
+        </form>
+    </body>
+</html>
